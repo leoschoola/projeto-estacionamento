@@ -18,8 +18,7 @@ public class Estacionamento {
         //Organizando respostas do admin
         int resposta;
         int cadastroClienteMensal;
-        String nomeCliente;
-        int cpfCliente;
+        String cpfCliente;
         String veiculoClienteMensal;
         String veiculoAvulso;
         String cor;
@@ -75,13 +74,38 @@ public class Estacionamento {
                     if (cadastroClienteMensal == 1){
                         System.out.println("Verificando seu cadastro...");
                     } else {
+                        tc.nextLine();
                         System.out.println("Digite seu nome completo: ");
-                        nomeCliente = tc.nextLine();
+                        String nomeCliente = tc.nextLine();
                         ticketMensal.setNome(nomeCliente);
 
                         System.out.println("Digite seu CPF: ");
-                        cpfCliente = tc.nextInt();
+                        cpfCliente = tc.nextLine();
                         ticketMensal.setCpf(cpfCliente);
+
+                        System.out.println("TIPO DE VEÍCULO: ");
+                        veiculoAvulso = tc.next();
+                        ticketMensal.setVeiculo(veiculoAvulso);
+
+                        System.out.println("PLACA: ");
+                        System.out.println("DEVE SER ESCRITO NESTE PADRAO");
+                        System.out.println("XXXNNNN");
+                        System.out.println("OU");
+                        System.out.println("XXXNXNN");
+                        placa = tc.next();
+                        ticketMensal.setPlaca(placa);
+
+                        System.out.println("MARCA: ");
+                        marca = tc.next();
+                        ticketMensal.setMarca(marca);
+
+                        System.out.println("MODELO: ");
+                        modelo = tc.next();
+                        ticketMensal.setModelo(modelo);
+
+                        System.out.println("COR ");
+                        cor = tc.next();
+                        ticketMensal.setCor(cor);
 
                         System.out.println("\n");
                         System.out.println(ticketMensal.toString());
