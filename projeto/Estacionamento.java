@@ -7,11 +7,12 @@ public class Estacionamento {
         Entrada entrada = new Entrada();
         Ticket ticket = new Ticket();
         TicketMensal ticketMensal = new TicketMensal();
+        Saida saida = new Saida();
 
         System.out.println("Bem vindo ao Estacionamento!");
         System.out.println("");
 
-        System.out.println("Horário de entrada: " + entrada.Entrou());
+        System.out.println("Horário de entrada: " + entrada.Horario());
         System.out.println("");
 
         //Organizando respostas do admin
@@ -87,6 +88,7 @@ public class Estacionamento {
                     }
                     break;
                 case 3:
+                    System.out.println("Horario de saída: " + saida.Horario());
                     System.out.println("Finalizando atendimento.");
                     break;
                 default:

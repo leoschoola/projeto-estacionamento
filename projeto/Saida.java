@@ -1,8 +1,7 @@
-public class Saida {
-    private String horarioSaida;
-
-    /*public boolean ticketAvulso(){
-
+public class Saida extends Entrada {
+    
+    public String Horario(){
+        return super.Horario();
     }
-    */
+    
 }
