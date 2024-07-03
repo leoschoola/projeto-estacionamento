@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Estacionamento {
+public class Main {
     public static void main(String[] args) {
         Scanner tc = new Scanner(System.in);
         //Declarando objetos
